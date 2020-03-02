@@ -1,4 +1,4 @@
-# our-ubuntu1804-4dev
+# Our Virtual Machine
 
 A Vagrant powered Ubuntu VM with Android Studio and Flutter for mobile development.
 
@@ -29,7 +29,7 @@ This is our `Vagrantfile` based on [felipecassiors/ubuntu1804-4dev](https://app.
    ```bash
    mkdir ~/Repos
    cd ~/Repos
-   git clone https://github.com/price-search/our-ubuntu1804-4dev
+   git clone https://github.com/price-search/our-vm
    cd our-ubuntu1804-4dev
    vagrant up
    ```
