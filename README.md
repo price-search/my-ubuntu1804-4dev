@@ -30,6 +30,6 @@ This is our `Vagrantfile` based on [felipecassiors/ubuntu1804-4dev](https://app.
    mkdir ~/Repos
    cd ~/Repos
    git clone https://github.com/price-search/our-vm
-   cd our-ubuntu1804-4dev
+   cd our-vm
    vagrant up
    ```
