@@ -23,8 +23,6 @@ Vagrant.configure("2") do |config|
   config.vm.provider "virtualbox" do |vb|
     # Set the display name of the VM in VirtualBox
     vb.name = "our-vm"
-    # Enable nested virtualization
-    vb.customize ['modifyvm', :id, '--nested-hw-virt', 'on']
     # Customize the amount of memory on the VM:
     # vb.memory = "4096"
     # Customize the amount of CPU on the VM:
@@ -66,7 +64,7 @@ Vagrant.configure("2") do |config|
 
     mkdir "$HOME/.android"
     touch "$HOME/.android/repositories.cfg"
-    yes | sdkmanager "platform-tools" "platforms;android-29" "build-tools;29.0.3" "sources;android-29" "patcher;v4" "emulator" "system-images;android-29;google_apis_playstore;x86"
+    yes | sdkmanager "platform-tools" "platforms;android-29" "build-tools;29.0.3" "sources;android-29" "patcher;v4"
 
     mkdir "$HOME/development"
     pushd "$HOME/development"
